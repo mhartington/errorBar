@@ -1,0 +1,24 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-loading {
+  display: block;
+  height: 24px;
+  position: absolute !important;
+  top: 0 !important;
+  width: 100% !important;
+  text-align: center;
+  padding: 0;
+  line-height: 24px;
+  /* transition 'sliding down' (check below)*/
+  -webkit-transition: 200ms all;
+}
+/* make loading bar slide up/down */
+
+.bar-loading.ng-enter,
+.bar-loading.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.bar-loading.ng-enter.ng-enter-active,
+.bar-loading.ng-leave {
+  opacity: 1;
+}
